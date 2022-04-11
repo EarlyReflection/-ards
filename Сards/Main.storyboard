@@ -37,7 +37,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="aQN-bW-ZZr" kind="presentation" modalPresentationStyle="fullScreen" id="c1N-Uc-8wB"/>
+                                            <segue destination="ufN-K8-kxR" kind="presentation" modalPresentationStyle="fullScreen" id="c1N-Uc-8wB"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-xz-Evt">
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="112"/>
+            <point key="canvasLocation" x="1175" y="114"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="wGe-Mu-Q58">
@@ -112,6 +112,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="SmO-Cw-OAA" kind="show" id="fLO-eZ-na1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHW-db-JIb">
                                         <rect key="frame" x="0.0" y="206.5" width="246" height="54"/>
@@ -121,7 +124,7 @@
                                             <color key="baseForegroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="79d-rd-Lk1" kind="presentation" modalPresentationStyle="fullScreen" id="0e9-rk-VPS"/>
+                                            <segue destination="79d-rd-Lk1" kind="show" id="wCU-iA-YCX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeM-dT-zuy">
@@ -131,6 +134,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="t2A-Ag-7gH" kind="show" id="Syb-rN-UzI"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beR-xv-gf2">
                                         <rect key="frame" x="0.0" y="344.5" width="246" height="53.5"/>
@@ -157,13 +163,13 @@
                             <constraint firstItem="uTT-nR-hZu" firstAttribute="height" secondItem="c1v-TK-215" secondAttribute="height" multiplier="0.7" id="vXx-C7-0fw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Snx-K5-LWx"/>
+                    <navigationItem key="navigationItem" title="Уроки" largeTitleDisplayMode="always" id="Snx-K5-LWx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K11-Pi-3BC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="114"/>
+            <point key="canvasLocation" x="2008.8" y="113.79310344827587"/>
         </scene>
-        <!--View Controller-->
+        <!--Карточки-->
         <scene sceneID="lFV-Ye-p0z">
             <objects>
                 <viewController id="79d-rd-Lk1" sceneMemberID="viewController">
@@ -220,11 +226,67 @@
                             <constraint firstItem="hYG-uI-9kQ" firstAttribute="top" secondItem="IOi-fC-lwC" secondAttribute="bottom" constant="100" id="uat-Eb-gNe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="oyl-2v-CdV"/>
+                    <navigationItem key="navigationItem" title="Карточки" id="oyl-2v-CdV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34C-oX-6Qb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="114"/>
+            <point key="canvasLocation" x="3468" y="58"/>
+        </scene>
+        <!--Словарь-->
+        <scene sceneID="Rtw-hd-4qo">
+            <objects>
+                <viewController id="SmO-Cw-OAA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Qt-O0-yk3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="son-Ig-CQk"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Словарь" id="dij-yw-6ar"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yl4-BP-YIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759" y="-266"/>
+        </scene>
+        <!--Упражнения-->
+        <scene sceneID="FeJ-w0-uiP">
+            <objects>
+                <viewController id="t2A-Ag-7gH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eCl-ph-w6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vlE-Su-4M8"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Упражнения" id="xcv-jK-rzM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rhp-pt-Iom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2758" y="548"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LGg-Aj-ufM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ufN-K8-kxR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Yz-2d-ObC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aQN-bW-ZZr" kind="relationship" relationship="rootViewController" id="4Rb-fG-kTE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDC-e9-NVp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="-681"/>
         </scene>
     </scenes>
 </document>
