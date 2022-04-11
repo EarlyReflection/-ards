@@ -74,8 +74,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordTF" destination="d31-s2-1bf" id="VMs-3X-i3j"/>
-                        <outlet property="phoneNumberTF" destination="5LN-aN-eG3" id="AF3-g6-Xiz"/>
+                        <outlet property="passwordTF" destination="d31-s2-1bf" id="slm-2H-puO"/>
+                        <outlet property="phoneNumberTF" destination="5LN-aN-eG3" id="ubC-6p-vSg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
