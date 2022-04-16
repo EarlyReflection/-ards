@@ -239,14 +239,28 @@
                     <view key="view" contentMode="scaleToFill" id="3Qt-O0-yk3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="тут будут все слова списком, перевод, озвучка, статистика по ним, " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5sL-Uc-Ewd">
+                                <rect key="frame" x="16" y="120" width="343" height="427"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="son-Ig-CQk"/>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5sL-Uc-Ewd" firstAttribute="width" secondItem="3Qt-O0-yk3" secondAttribute="width" multiplier="0.914667" id="F1o-VI-mnZ"/>
+                            <constraint firstItem="5sL-Uc-Ewd" firstAttribute="centerY" secondItem="3Qt-O0-yk3" secondAttribute="centerY" id="Hio-5d-HcF"/>
+                            <constraint firstAttribute="width" secondItem="5sL-Uc-Ewd" secondAttribute="height" multiplier="375:427" id="Nj1-i1-rdD"/>
+                            <constraint firstItem="5sL-Uc-Ewd" firstAttribute="centerX" secondItem="3Qt-O0-yk3" secondAttribute="centerX" id="UvT-J0-MjS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Словарь" id="dij-yw-6ar"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yl4-BP-YIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2759" y="-266"/>
+            <point key="canvasLocation" x="2757.5999999999999" y="-266.71664167916043"/>
         </scene>
         <!--Упражнения-->
         <scene sceneID="FeJ-w0-uiP">
@@ -255,14 +269,30 @@
                     <view key="view" contentMode="scaleToFill" id="eCl-ph-w6Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- написать слово -составить предложение " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vEE-XA-K8p">
+                                <rect key="frame" x="16" y="147.5" width="343" height="372"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vEE-XA-K8p" secondAttribute="height" multiplier="343:372" id="GAL-3f-RwB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vlE-Su-4M8"/>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vEE-XA-K8p" firstAttribute="centerY" secondItem="eCl-ph-w6Q" secondAttribute="centerY" id="6TX-i0-9i8"/>
+                            <constraint firstItem="vEE-XA-K8p" firstAttribute="centerX" secondItem="eCl-ph-w6Q" secondAttribute="centerX" id="Gop-3m-QLC"/>
+                            <constraint firstItem="vEE-XA-K8p" firstAttribute="width" secondItem="eCl-ph-w6Q" secondAttribute="width" multiplier="0.914667" id="kQk-cF-QEu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Упражнения" id="xcv-jK-rzM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhp-pt-Iom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2758" y="548"/>
+            <point key="canvasLocation" x="2757.5999999999999" y="547.37631184407803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LGg-Aj-ufM">
