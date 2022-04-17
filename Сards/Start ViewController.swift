@@ -8,15 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var phoneNumberTF: UITextField!
+    
+    @IBOutlet var userName: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let lessonsVC = segue.destination as? LessonsViewController else { return }
+        lessonsVC.user = userName.text
     }
-
-
+    
+    @IBAction func enterPressed() {
+        performSegue(withIdentifier: "firstSegue", sender: nil)
+    }
+    
+    @IBAction func unwindSegueToLoginScreen(segue: UIStoryboardSegue) {
+        userName.text = ""
+        passwordTF.text = ""
+    
+        func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
 }
 
+}
