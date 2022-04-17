@@ -17,9 +17,6 @@ class ViewController: UIViewController {
         lessonsVC.user = userName.text
     }
     
-    @IBAction func enterPressed() {
-        performSegue(withIdentifier: "firstSegue", sender: nil)
-    }
     
     @IBAction func unwindSegueToLoginScreen(segue: UIStoryboardSegue) {
         userName.text = ""

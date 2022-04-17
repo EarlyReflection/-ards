@@ -10,8 +10,7 @@ import UIKit
 class LessonsViewController: UIViewController {
 
     var user: String?
-    let hell = "666"
-    
+   
     @IBOutlet var userInfo: UILabel!
     
     override func viewDidLoad() {

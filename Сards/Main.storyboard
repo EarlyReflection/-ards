@@ -37,7 +37,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="enterPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRZ-lW-x3N"/>
+                                            <segue destination="aQN-bW-ZZr" kind="show" id="i6G-OL-JIP"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-xz-Evt">
@@ -77,7 +77,6 @@
                     <connections>
                         <outlet property="passwordTF" destination="d31-s2-1bf" id="slm-2H-puO"/>
                         <outlet property="userName" destination="5LN-aN-eG3" id="ubC-6p-vSg"/>
-                        <segue destination="aQN-bW-ZZr" kind="show" identifier="firstSegue" id="QrN-mF-I2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
