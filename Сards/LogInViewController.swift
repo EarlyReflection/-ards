@@ -7,24 +7,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LogInViewController: UIViewController {
     
     @IBOutlet var userName: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let lessonsVC = segue.destination as? LessonsViewController else { return }
+        guard let navigationVC = segue.destination as? UINavigationController else {return}
+        guard let lessonsVC = navigationVC.topViewController as? LessonsViewController else { return }
         lessonsVC.user = userName.text
     }
     
     
-    @IBAction func unwindSegueToLoginScreen(segue: UIStoryboardSegue) {
+    @IBAction func unwindToLogIn(segue: UIStoryboardSegue) {
         userName.text = ""
         passwordTF.text = ""
-    
-        func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
+        
     }
-}
-
+    
 }

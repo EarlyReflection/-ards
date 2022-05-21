@@ -8,9 +8,9 @@
 import UIKit
 
 class LessonsViewController: UIViewController {
-
+    
     var user: String?
-   
+    
     @IBOutlet var userInfo: UILabel!
     
     override func viewDidLoad() {
@@ -18,8 +18,5 @@ class LessonsViewController: UIViewController {
         guard let user = self.user else { return }
         userInfo.text = "Hello, \(user)!"
         
-        }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
     }
 }
