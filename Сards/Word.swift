@@ -21,15 +21,14 @@ struct Word {
         var words: [Word] = []
         let dictionary = Dictionary()
         
-        for index in 0..<dictionary.terms.count {
+        for index in 0..<dictionary.arrayOfWords.count {
             let word = Word(
-                term: dictionary.terms[index][0],
-                definition: dictionary.terms[index][1],
-                exampleEn: dictionary.terms[index][2],
-                exampleRu: dictionary.terms[index][3]
+                term: dictionary.arrayOfWords[index][0],
+                definition: dictionary.arrayOfWords[index][1],
+                exampleEn: dictionary.arrayOfWords[index][2],
+                exampleRu: dictionary.arrayOfWords[index][3]
                 )
             words.append(word)
-            
         }
         return words
     }

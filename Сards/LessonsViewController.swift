@@ -9,14 +9,12 @@ import UIKit
 
 class LessonsViewController: UIViewController {
     
-    var user: String?
+    let words = Word.getWords()
     
-    @IBOutlet var userInfo: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        guard let user = self.user else { return }
-        userInfo.text = "Hello, \(user)!"
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let dictionaryVC = segue.destination as? DictionaryTableViewController else { return }
+        dictionaryVC.words = words
         
     }
 }

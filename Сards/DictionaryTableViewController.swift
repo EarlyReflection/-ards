@@ -9,7 +9,7 @@ import UIKit
 
 class DictionaryTableViewController: UITableViewController {
     
-    let words = Word.getWords()
+    var words: [Word]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,7 @@ class DictionaryTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "word", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let word = words[indexPath.row]
+        
         content.text = word.term
         content.secondaryText = word.definition
         cell.contentConfiguration = content
@@ -40,6 +41,10 @@ class DictionaryTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let word = words[indexPath.row]
+        detailVC.word = word
     }
     
 
