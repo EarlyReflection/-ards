@@ -9,7 +9,7 @@ import Foundation
 
 struct Word {
     let term: String
-    let definition: String
+    let translation: String
     let exampleEn: String
     let exampleRu: String
     
@@ -24,7 +24,7 @@ struct Word {
         for index in 0..<dictionary.arrayOfWords.count {
             let word = Word(
                 term: dictionary.arrayOfWords[index][0],
-                definition: dictionary.arrayOfWords[index][1],
+                translation: dictionary.arrayOfWords[index][1],
                 exampleEn: dictionary.arrayOfWords[index][2],
                 exampleRu: dictionary.arrayOfWords[index][3]
                 )

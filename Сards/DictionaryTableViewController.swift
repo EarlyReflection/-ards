@@ -13,6 +13,7 @@ class DictionaryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 66
 
     }
 
@@ -33,7 +34,11 @@ class DictionaryTableViewController: UITableViewController {
         let word = words[indexPath.row]
         
         content.text = word.term
-        content.secondaryText = word.definition
+        content.textProperties.color = UIColor.white
+        
+        content.secondaryText = word.translation
+        content.secondaryTextProperties.color = UIColor.lightGray
+        
         cell.contentConfiguration = content
         return cell
     }

@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         wordLabel.text = word.term
-        definitionLabel.text = word.definition
+        definitionLabel.text = word.translation
         exampleLabel.text = "\(word.exampleEn) \n\n\(word.exampleRu)"
 
     }

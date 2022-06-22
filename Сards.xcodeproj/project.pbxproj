@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D139B4A4283A682B00C5D706 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D139B4A3283A682B00C5D706 /* DetailViewController.swift */; };
+		D157BAC22863ACFA00D33637 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157BAC12863ACFA00D33637 /* DetailTableViewController.swift */; };
 		D1590114283945C700511DE5 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1590113283945C700511DE5 /* DictionaryTableViewController.swift */; };
 		D1590116283955F400511DE5 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1590115283955F400511DE5 /* Word.swift */; };
 		D159011828395DAB00511DE5 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D159011728395DAB00511DE5 /* Dictionary.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		D139B4A3283A682B00C5D706 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D157BAC12863ACFA00D33637 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		D1590113283945C700511DE5 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		D1590115283955F400511DE5 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		D159011728395DAB00511DE5 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -68,13 +70,14 @@
 				D1C02B7228037CCA00AED384 /* SceneDelegate.swift */,
 				D1B09C09280C76C2004DFE25 /* LessonsViewController.swift */,
 				D1C02B8428037D1E00AED384 /* Main.storyboard */,
+				D157BAC12863ACFA00D33637 /* DetailTableViewController.swift */,
+				D139B4A3283A682B00C5D706 /* DetailViewController.swift */,
 				D1590115283955F400511DE5 /* Word.swift */,
 				D1C02B7928037CCB00AED384 /* Assets.xcassets */,
 				D1C02B7B28037CCB00AED384 /* LaunchScreen.storyboard */,
 				D1C02B7E28037CCB00AED384 /* Info.plist */,
 				D1590113283945C700511DE5 /* DictionaryTableViewController.swift */,
 				D159011728395DAB00511DE5 /* Dictionary.swift */,
-				D139B4A3283A682B00C5D706 /* DetailViewController.swift */,
 			);
 			path = "Сards";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				D1C02B7128037CCA00AED384 /* AppDelegate.swift in Sources */,
 				D1590114283945C700511DE5 /* DictionaryTableViewController.swift in Sources */,
 				D159011828395DAB00511DE5 /* Dictionary.swift in Sources */,
+				D157BAC22863ACFA00D33637 /* DetailTableViewController.swift in Sources */,
 				D1C02B7328037CCA00AED384 /* SceneDelegate.swift in Sources */,
 				D1590116283955F400511DE5 /* Word.swift in Sources */,
 				D139B4A4283A682B00C5D706 /* DetailViewController.swift in Sources */,
