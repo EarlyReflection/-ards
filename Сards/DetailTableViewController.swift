@@ -18,6 +18,11 @@ class DetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        termLabel.text = word.term
+        translationLabel.text = word.translation
+        enExampleLabel.text = word.exampleEn
+        ruExampleLabel.text = word.exampleRu
 
     }
 }

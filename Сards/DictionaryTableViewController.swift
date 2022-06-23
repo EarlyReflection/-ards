@@ -46,7 +46,7 @@ class DictionaryTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailVC = segue.destination as? DetailViewController else { return }
+        guard let detailVC = segue.destination as? DetailTableViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let word = words[indexPath.row]
         detailVC.word = word
