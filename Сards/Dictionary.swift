@@ -9,7 +9,7 @@ import Foundation
 
 class Dictionary {
     let arrayOfWords = [
-        ["implicitly", "неявно", "an implicitly unwrapped optional", "неявно извлеченный опционал"],
+        ["implicitly", "неявно", "values are never implicitly converted to another type", "значения никогда не преобразуются неявно в другой тип"],
         ["execution", "выполнение", "code execution continues as usual", "выполнение кода продолжается в обычном режиме"],
         ["tuple", "кортеж", "tuple of values", "кортеж значений"],
         ["increment", "возрастание, увеличение", "this value must be incremented after each failed login attempt", "это значение должно увеличиваться после каждой неудачной попытки входа в систему"],
