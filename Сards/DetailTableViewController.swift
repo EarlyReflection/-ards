@@ -10,19 +10,36 @@ import UIKit
 class DetailTableViewController: UITableViewController {
     
     var word: Word!
-
-    @IBOutlet var termLabel: UILabel!
-    @IBOutlet var translationLabel: UILabel!
-    @IBOutlet var enExampleLabel: UILabel!
-    @IBOutlet var ruExampleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        termLabel.text = word.term
-        translationLabel.text = word.translation
-        enExampleLabel.text = word.exampleEn
-        ruExampleLabel.text = word.exampleRu
-
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detail", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        
+        switch indexPath.row {
+        case 0:
+            content.text = word.term
+            content.textProperties.font = UIFont.systemFont(ofSize: 33)
+        case 1:
+            content.text = word.translation
+            content.textProperties.font = UIFont.systemFont(ofSize: 27)
+        case 2:
+            content.text = word.exampleEn
+            content.textProperties.color = UIColor.black
+        default:
+            content.text = word.exampleRu
+        }
+        
+        cell.contentConfiguration = content
+        return cell
+        
+    }
+    
 }

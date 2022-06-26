@@ -66,14 +66,14 @@
 			children = (
 				D1C02B7028037CCA00AED384 /* AppDelegate.swift */,
 				D1C02B7228037CCA00AED384 /* SceneDelegate.swift */,
-				D1B09C09280C76C2004DFE25 /* LessonsViewController.swift */,
 				D1C02B8428037D1E00AED384 /* Main.storyboard */,
+				D1B09C09280C76C2004DFE25 /* LessonsViewController.swift */,
+				D1590113283945C700511DE5 /* DictionaryTableViewController.swift */,
 				D157BAC12863ACFA00D33637 /* DetailTableViewController.swift */,
 				D1590115283955F400511DE5 /* Word.swift */,
 				D1C02B7928037CCB00AED384 /* Assets.xcassets */,
 				D1C02B7B28037CCB00AED384 /* LaunchScreen.storyboard */,
 				D1C02B7E28037CCB00AED384 /* Info.plist */,
-				D1590113283945C700511DE5 /* DictionaryTableViewController.swift */,
 				D159011728395DAB00511DE5 /* Dictionary.swift */,
 			);
 			path = "Сards";

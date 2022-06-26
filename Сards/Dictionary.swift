@@ -12,7 +12,7 @@ class Dictionary {
         ["implicitly", "неявно", "values are never implicitly converted to another type", "значения никогда не преобразуются неявно в другой тип"],
         ["execution", "выполнение", "code execution continues as usual", "выполнение кода продолжается в обычном режиме"],
         ["tuple", "кортеж", "tuple of values", "кортеж значений"],
-        ["increment", "возрастание, увеличение", "this value must be incremented after each failed login attempt_this value must be incremented after each failed login attempt_this value must be incremented after each failed login attempt", "это значение должно увеличиваться после каждой неудачной попытки входа в систему_это значение должно увеличиваться после каждой неудачной попытки входа в систему_это значение должно увеличиваться после каждой неудачной попытки входа в систему"],
+        ["increment", "возрастание, увеличение", "this value must be incremented after each failed login attempt", "это значение должно увеличиваться после каждой неудачной попытки входа в систему"],
         ["expression", "выражение", "expression return an optional value", "выражение возвращает необязательное значение"],
         ["condition", "условие", "if the optional value is nil, the conditional is false", "если необязательное значение равно нулю, условное значение равно false"],
         ["compute", "считать, подсчитывать", "Computed properties are provided by classes, structures, and enumerations", "Вычисляемые свойства предоставляются классами, структурами и перечислениями"],
